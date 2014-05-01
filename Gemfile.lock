@@ -59,6 +59,9 @@ GEM
       bundler (>= 1.3.0, < 2.0)
       railties (= 4.0.4)
       sprockets-rails (~> 2.0.0)
+    rails-api (0.2.0)
+      actionpack (>= 3.2.11)
+      railties (>= 3.2.11)
     railties (4.0.4)
       actionpack (= 4.0.4)
       activesupport (= 4.0.4)
@@ -104,4 +107,5 @@ DEPENDENCIES
   pg
   pry
   rails (= 4.0.4)
+  rails-api
   rspec-rails
