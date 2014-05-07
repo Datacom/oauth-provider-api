@@ -21,3 +21,11 @@
 
 en:
   hello: "Hello world"
+  doorkeeper:
+    scopes:
+      tasks:   Access your tasks
+      public:  Access your public data
+      private: Access your private data
+      write:   Update your information
+      admin:   Change your preferences
+      email:   Send you an email
