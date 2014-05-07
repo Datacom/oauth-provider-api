@@ -1,0 +1,23 @@
+title Authentication Sequence
+
+User -> Android: Open App
+Android -> Android: Check if already have accesstoken (local db)
+alt no_access_token
+    Android->Api: Authenticate my user
+    Api-> Android: Redirect to my login page (WebView)
+    User -> Api:  Login details
+    Api -> User:  Succesful (redirect to callback with request_token)
+    Android -> Android: save request request_token
+    Android -> Api: Authorise request_token
+    Api -> Android: Succesful (hand back access_token)
+    Android -> Android: save access_token
+else existing_access_token
+    Android -> Api: refresh access_token
+    Api -> Android: updated token
+end
+
+Android -> Api: Get my last timesheets (+access_token)
+Api -> SimplePayroll: GET timesheets for User
+SimplePayroll -> Api: timesheets Response
+Api -> Android: timesheets Response
+Android -> User: Display last timesheets
