@@ -26,15 +26,8 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 0.3.37)
     arel (4.0.2)
-    bcrypt (3.1.7)
     builder (3.1.4)
     coderay (1.1.0)
-    devise (3.2.4)
-      bcrypt (~> 3.0)
-      orm_adapter (~> 0.1)
-      railties (>= 3.2.6, < 5)
-      thread_safe (~> 0.1)
-      warden (~> 1.2.3)
     diff-lcs (1.2.5)
     doorkeeper (1.2.0)
       railties (>= 3.1)
@@ -51,7 +44,6 @@ GEM
     mime-types (1.25.1)
     minitest (4.7.5)
     multi_json (1.10.0)
-    orm_adapter (0.5.0)
     pg (0.17.1)
     polyglot (0.3.4)
     pry (0.9.12.6)
@@ -107,14 +99,11 @@ GEM
       polyglot
       polyglot (>= 0.3.1)
     tzinfo (0.3.39)
-    warden (1.2.3)
-      rack (>= 1.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  devise
   doorkeeper (= 1.2.0)
   faker
   hirb
